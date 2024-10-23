@@ -3,9 +3,10 @@ namespace Net_poo_desafio.Models
     public abstract class Smartphone
     {
         public string Numero { get; set; }
-        protected String Modelo { get;}
-        protected String IMEI { get;}
-        protected int Memoria { get;}
+        protected String Modelo { get; set;}
+        protected String IMEI { get;set;}
+        protected int Memoria { get; set;}
+       
 
         public Smartphone(string numero, string modelo, string imei, int memoria)
         {
