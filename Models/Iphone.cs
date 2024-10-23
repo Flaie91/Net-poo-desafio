@@ -12,7 +12,8 @@ namespace Net_poo_desafio.Models
 
         public override void InstalarAplicativo(string nomeApp)
         {
-            Console.WriteLine("Instalando App no Iphone...");
+            
+            Console.WriteLine($"Instalando {nomeApp} no Iphone...");
         }
     }
 }
