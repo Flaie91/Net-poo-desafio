@@ -1,11 +1,21 @@
 namespace Net_poo_desafio.Models
 {
     
-    public class Nokia : Smartphone
+    public class Nokia(string numero, string modelo, string imei, int memoria) : Smartphone(numero, modelo, imei, memoria)
     {
-        public Nokia(string numero, string modelo, string imei, int memoria) : base(numero, modelo, imei, memoria)
+        public string GetModelo()
         {
-            numero = "85825-5255";
+            return Modelo;
+        }
+
+        public string GetImei()
+        {
+            return IMEI;
+        }
+
+        public int GetMemoria()
+        {
+            return Memoria;
         }
 
         public override void InstalarAplicativo(string nomeApp)

@@ -3,11 +3,21 @@ using System.ComponentModel;
 namespace Net_poo_desafio.Models
 {
     
-    public class Iphone : Smartphone
+    public class Iphone(string numero, string modelo, string imei, int memoria) : Smartphone(numero, modelo, imei, memoria)
     {
-        public Iphone(string numero, string modelo, string imei, int memoria) : base(numero, modelo, imei, memoria)
+        public string GetModelo()
         {
-            numero = "85825-5555";
+            return Modelo;
+        }
+
+        public string GetImei()
+        {
+            return IMEI;
+        }
+
+        public int GetMemoria()
+        {
+            return Memoria;
         }
 
         public override void InstalarAplicativo(string nomeApp)
